@@ -12,6 +12,6 @@ FROM openjdk:17-jdk-slim
 
 EXPOSE 8080
 # onde tem todolist-1.0.0.jar você pega com esta no seu pom.xml
-COPY --from=build /target/todolist-1.0.0.jar app.jar
+COPY --from=build /target/livraria-1.0.0.jar app.jar
 
 ENTRYPOINT [ "java", "-jar", "app.jar" ]
